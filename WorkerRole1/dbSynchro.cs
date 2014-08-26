@@ -20,7 +20,7 @@ namespace WorkerRole1
         public static String GetData()
         {
             string results;
-            string conn = "server=mssql.oldtowndining.com;database=oldtowndining;uid=oldtowndining;pwd=y5EQJ5m7C3;pooling=true;connection lifetime=120;max pool size=25;";
+            string conn = "server=mssql.oldtowndining.com;database=myDb;uid=myUID;pwd=myPWD;pooling=true;connection lifetime=120;max pool size=25;";
             string query = "Select * from tblCustomers where CLastName = 'Baily'";
             using (SqlConnection connection = new SqlConnection(conn))
             {
